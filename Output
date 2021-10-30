@@ -1,0 +1,438 @@
+2021-10-30 21:38:24.307635: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2021-10-30 21:38:24.307666: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+                                                             0  ...                                               4
+Unnamed: 0                                                   0  ...                                               4
+ID                                                      158023  ...                                          192985
+Name                                                  L. Messi  ...                                    K. De Bruyne
+Age                                                         31  ...                                              27
+Photo           https://cdn.sofifa.org/players/4/19/158023.png  ...  https://cdn.sofifa.org/players/4/19/192985.png
+...                                                        ...  ...                                             ...
+GKHandling                                                11.0  ...                                            13.0
+GKKicking                                                 15.0  ...                                             5.0
+GKPositioning                                             14.0  ...                                            10.0
+GKReflexes                                                 8.0  ...                                            13.0
+Release Clause                                         €226.5M  ...                                         €196.4M
+
+[89 rows x 5 columns]
+--------------------------------------------------------------------------------
+Index(['Unnamed: 0', 'ID', 'Name', 'Age', 'Photo', 'Nationality', 'Flag',
+       'Overall', 'Potential', 'Club', 'Club Logo', 'Value', 'Wage', 'Special',
+       'Preferred Foot', 'International Reputation', 'Weak Foot',
+       'Skill Moves', 'Work Rate', 'Body Type', 'Real Face', 'Position',
+       'Jersey Number', 'Joined', 'Loaned From', 'Contract Valid Until',
+       'Height', 'Weight', 'LS', 'ST', 'RS', 'LW', 'LF', 'CF', 'RF', 'RW',
+       'LAM', 'CAM', 'RAM', 'LM', 'LCM', 'CM', 'RCM', 'RM', 'LWB', 'LDM',
+       'CDM', 'RDM', 'RWB', 'LB', 'LCB', 'CB', 'RCB', 'RB', 'Crossing',
+       'Finishing', 'HeadingAccuracy', 'ShortPassing', 'Volleys', 'Dribbling',
+       'Curve', 'FKAccuracy', 'LongPassing', 'BallControl', 'Acceleration',
+       'SprintSpeed', 'Agility', 'Reactions', 'Balance', 'ShotPower',
+       'Jumping', 'Stamina', 'Strength', 'LongShots', 'Aggression',
+       'Interceptions', 'Positioning', 'Vision', 'Penalties', 'Composure',
+       'Marking', 'StandingTackle', 'SlidingTackle', 'GKDiving', 'GKHandling',
+       'GKKicking', 'GKPositioning', 'GKReflexes', 'Release Clause'],
+      dtype='object')
+--------------------------------------------------------------------------------
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 18207 entries, 0 to 18206
+Data columns (total 89 columns):
+ #   Column                    Non-Null Count  Dtype  
+---  ------                    --------------  -----  
+ 0   Unnamed: 0                18207 non-null  int64  
+ 1   ID                        18207 non-null  int64  
+ 2   Name                      18207 non-null  object 
+ 3   Age                       18207 non-null  int64  
+ 4   Photo                     18207 non-null  object 
+ 5   Nationality               18207 non-null  object 
+ 6   Flag                      18207 non-null  object 
+ 7   Overall                   18207 non-null  int64  
+ 8   Potential                 18207 non-null  int64  
+ 9   Club                      17966 non-null  object 
+ 10  Club Logo                 18207 non-null  object 
+ 11  Value                     18207 non-null  object 
+ 12  Wage                      18207 non-null  object 
+ 13  Special                   18207 non-null  int64  
+ 14  Preferred Foot            18159 non-null  object 
+ 15  International Reputation  18159 non-null  float64
+ 16  Weak Foot                 18159 non-null  float64
+ 17  Skill Moves               18159 non-null  float64
+ 18  Work Rate                 18159 non-null  object 
+ 19  Body Type                 18159 non-null  object 
+ 20  Real Face                 18159 non-null  object 
+ 21  Position                  18147 non-null  object 
+ 22  Jersey Number             18147 non-null  float64
+ 23  Joined                    16654 non-null  object 
+ 24  Loaned From               1264 non-null   object 
+ 25  Contract Valid Until      17918 non-null  object 
+ 26  Height                    18159 non-null  object 
+ 27  Weight                    18159 non-null  object 
+ 28  LS                        16122 non-null  object 
+ 29  ST                        16122 non-null  object 
+ 30  RS                        16122 non-null  object 
+ 31  LW                        16122 non-null  object 
+ 32  LF                        16122 non-null  object 
+ 33  CF                        16122 non-null  object 
+ 34  RF                        16122 non-null  object 
+ 35  RW                        16122 non-null  object 
+ 36  LAM                       16122 non-null  object 
+ 37  CAM                       16122 non-null  object 
+ 38  RAM                       16122 non-null  object 
+ 39  LM                        16122 non-null  object 
+ 40  LCM                       16122 non-null  object 
+ 41  CM                        16122 non-null  object 
+ 42  RCM                       16122 non-null  object 
+ 43  RM                        16122 non-null  object 
+ 44  LWB                       16122 non-null  object 
+ 45  LDM                       16122 non-null  object 
+ 46  CDM                       16122 non-null  object 
+ 47  RDM                       16122 non-null  object 
+ 48  RWB                       16122 non-null  object 
+ 49  LB                        16122 non-null  object 
+ 50  LCB                       16122 non-null  object 
+ 51  CB                        16122 non-null  object 
+ 52  RCB                       16122 non-null  object 
+ 53  RB                        16122 non-null  object 
+ 54  Crossing                  18159 non-null  float64
+ 55  Finishing                 18159 non-null  float64
+ 56  HeadingAccuracy           18159 non-null  float64
+ 57  ShortPassing              18159 non-null  float64
+ 58  Volleys                   18159 non-null  float64
+ 59  Dribbling                 18159 non-null  float64
+ 60  Curve                     18159 non-null  float64
+ 61  FKAccuracy                18159 non-null  float64
+ 62  LongPassing               18159 non-null  float64
+ 63  BallControl               18159 non-null  float64
+ 64  Acceleration              18159 non-null  float64
+ 65  SprintSpeed               18159 non-null  float64
+ 66  Agility                   18159 non-null  float64
+ 67  Reactions                 18159 non-null  float64
+ 68  Balance                   18159 non-null  float64
+ 69  ShotPower                 18159 non-null  float64
+ 70  Jumping                   18159 non-null  float64
+ 71  Stamina                   18159 non-null  float64
+ 72  Strength                  18159 non-null  float64
+ 73  LongShots                 18159 non-null  float64
+ 74  Aggression                18159 non-null  float64
+ 75  Interceptions             18159 non-null  float64
+ 76  Positioning               18159 non-null  float64
+ 77  Vision                    18159 non-null  float64
+ 78  Penalties                 18159 non-null  float64
+ 79  Composure                 18159 non-null  float64
+ 80  Marking                   18159 non-null  float64
+ 81  StandingTackle            18159 non-null  float64
+ 82  SlidingTackle             18159 non-null  float64
+ 83  GKDiving                  18159 non-null  float64
+ 84  GKHandling                18159 non-null  float64
+ 85  GKKicking                 18159 non-null  float64
+ 86  GKPositioning             18159 non-null  float64
+ 87  GKReflexes                18159 non-null  float64
+ 88  Release Clause            16643 non-null  object 
+dtypes: float64(38), int64(6), object(45)
+memory usage: 12.4+ MB
+None
+--------------------------------------------------------------------------------
+                            count           mean  ...       75%       max
+Unnamed: 0                18207.0    9103.000000  ...   13654.5   18206.0
+ID                        18207.0  214298.338606  ...  236529.5  246620.0
+Age                       18207.0      25.122206  ...      28.0      45.0
+Overall                   18207.0      66.238699  ...      71.0      94.0
+Potential                 18207.0      71.307299  ...      75.0      95.0
+Special                   18207.0    1597.809908  ...    1787.0    2346.0
+International Reputation  18159.0       1.113222  ...       1.0       5.0
+Weak Foot                 18159.0       2.947299  ...       3.0       5.0
+Skill Moves               18159.0       2.361308  ...       3.0       5.0
+Jersey Number             18147.0      19.546096  ...      26.0      99.0
+Crossing                  18159.0      49.734181  ...      64.0      93.0
+Finishing                 18159.0      45.550911  ...      62.0      95.0
+HeadingAccuracy           18159.0      52.298144  ...      64.0      94.0
+ShortPassing              18159.0      58.686712  ...      68.0      93.0
+Volleys                   18159.0      42.909026  ...      57.0      90.0
+Dribbling                 18159.0      55.371001  ...      68.0      97.0
+Curve                     18159.0      47.170824  ...      62.0      94.0
+FKAccuracy                18159.0      42.863153  ...      57.0      94.0
+LongPassing               18159.0      52.711933  ...      64.0      93.0
+BallControl               18159.0      58.369459  ...      69.0      96.0
+Acceleration              18159.0      64.614076  ...      75.0      97.0
+SprintSpeed               18159.0      64.726967  ...      75.0      96.0
+Agility                   18159.0      63.503607  ...      74.0      96.0
+Reactions                 18159.0      61.836610  ...      68.0      96.0
+Balance                   18159.0      63.966573  ...      74.0      96.0
+ShotPower                 18159.0      55.460047  ...      68.0      95.0
+Jumping                   18159.0      65.089432  ...      73.0      95.0
+Stamina                   18159.0      63.219946  ...      74.0      96.0
+Strength                  18159.0      65.311967  ...      74.0      97.0
+LongShots                 18159.0      47.109973  ...      62.0      94.0
+Aggression                18159.0      55.868991  ...      69.0      95.0
+Interceptions             18159.0      46.698276  ...      64.0      92.0
+Positioning               18159.0      49.958478  ...      64.0      95.0
+Vision                    18159.0      53.400903  ...      64.0      94.0
+Penalties                 18159.0      48.548598  ...      60.0      92.0
+Composure                 18159.0      58.648274  ...      67.0      96.0
+Marking                   18159.0      47.281623  ...      64.0      94.0
+StandingTackle            18159.0      47.697836  ...      66.0      93.0
+SlidingTackle             18159.0      45.661435  ...      64.0      91.0
+GKDiving                  18159.0      16.616223  ...      14.0      90.0
+GKHandling                18159.0      16.391596  ...      14.0      92.0
+GKKicking                 18159.0      16.232061  ...      14.0      91.0
+GKPositioning             18159.0      16.388898  ...      14.0      90.0
+GKReflexes                18159.0      16.710887  ...      14.0      94.0
+
+[44 rows x 8 columns]
+--------------------------------------------------------------------------------
+ Data Cleaning ! 
+Warning: QT_DEVICE_PIXEL_RATIO is deprecated. Instead use:
+   QT_AUTO_SCREEN_SCALE_FACTOR to enable platform plugin controlled per-screen factors.
+   QT_SCREEN_SCALE_FACTORS to set per-screen DPI.
+   QT_SCALE_FACTOR to set the application global scale factor.
+AxesSubplot(0.125,0.11;0.775x0.77)
+ID                   0
+Name                 0
+Age                  0
+Nationality          0
+Overall              0
+                  ... 
+GKHandling          48
+GKKicking           48
+GKPositioning       48
+GKReflexes          48
+Release Clause    1564
+Length: 85, dtype: int64
+They are same
+ID                   0
+Name                 0
+Age                  0
+Nationality          0
+Overall              0
+                  ... 
+GKHandling           0
+GKKicking            0
+GKPositioning        0
+GKReflexes           0
+Release Clause    1516
+Length: 85, dtype: int64
+ Data Analysis ! 
+Total number of countries : 164
+England      1657
+Germany      1195
+Spain        1071
+Argentina     936
+France        911
+Name: Nationality, dtype: int64
+--------------------------------------------------------------------------------
+
+European Countries have most players
+Total number of clubs : 651
+FC Barcelona               33
+Southampton                33
+Cardiff City               33
+TSG 1899 Hoffenheim        33
+Wolverhampton Wanderers    33
+Name: Club, dtype: int64
+Maximum Potential : K. Mbappé
+Maximum Overall Perforamnce : L. Messi
+BEST IN DIFFERENT ASPECTS :
+_________________________
+
+
+Best Crossing : K. De Bruyne
+Best Finishing : L. Messi
+Best HeadingAccuracy : Naldo
+Best ShortPassing : L. Modrić
+Best Volleys : E. Cavani
+Best Dribbling : L. Messi
+Best Curve : Quaresma
+Best FKAccuracy : L. Messi
+Best LongPassing : T. Kroos
+Best BallControl : L. Messi
+Best Acceleration : Douglas Costa
+Best SprintSpeed : K. Mbappé
+Best Agility : Neymar Jr
+Best Reactions : Cristiano Ronaldo
+Best Balance : Bernard
+Best ShotPower : Cristiano Ronaldo
+Best Jumping : Cristiano Ronaldo
+Best Stamina : N. Kanté
+Best Strength : A. Akinfenwa
+Best LongShots : L. Messi
+Best Aggression : B. Pearson
+Best Interceptions : N. Kanté
+Best Positioning : Cristiano Ronaldo
+Best Vision : L. Messi
+Best Penalties : M. Balotelli
+Best Composure : L. Messi
+Best Marking : A. Barzagli
+Best StandingTackle : G. Chiellini
+Best SlidingTackle : Sergio Ramos
+Best GKDiving : De Gea
+Best GKHandling : J. Oblak
+Best GKKicking : M. Neuer
+Best GKPositioning : G. Buffon
+Best GKReflexes : De Gea
+
+Most valued player : Neymar Jr
+Highest earner : L. Messi
+--------------------------------------------------------------------------------
+
+Top Earners
+ Exploratory Data Analysis !!
+<seaborn.axisgrid.JointGrid object at 0x7fac95ca7280>
+([<matplotlib.projections.polar.ThetaTick object at 0x7fac95c262b0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95a59e20>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95a51f10>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95a49910>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95a617f0>], [Text(0.0, 0, 'Balance'), Text(1.2566370614359172, 0, 'Agility'), Text(2.5132741228718345, 0, 'Acceleration'), Text(3.7699111843077517, 0, 'BallControl'), Text(5.026548245743669, 0, 'Dribbling')])
+([<matplotlib.projections.polar.RadialTick object at 0x7fac95bccf10>, <matplotlib.projections.polar.RadialTick object at 0x7fac95a49490>, <matplotlib.projections.polar.RadialTick object at 0x7fac95a679a0>], [Text(0, 25, '25'), Text(0, 50, '50'), Text(0, 75, '75')])
+(0.0, 100.0)
+None
+Text(0.5, 1.1, 'CAM')
+([<matplotlib.projections.polar.ThetaTick object at 0x7fac95a675b0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95a03400>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95a1d1f0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95a0a070>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95a03e50>], [Text(0.0, 0, 'Jumping'), Text(1.2566370614359172, 0, 'Aggression'), Text(2.5132741228718345, 0, 'HeadingAccuracy'), Text(3.7699111843077517, 0, 'Marking'), Text(5.026548245743669, 0, 'Interceptions')])
+([<matplotlib.projections.polar.RadialTick object at 0x7fac95a7a6a0>, <matplotlib.projections.polar.RadialTick object at 0x7fac95a03100>, <matplotlib.projections.polar.RadialTick object at 0x7fac95a238b0>], [Text(0, 25, '25'), Text(0, 50, '50'), Text(0, 75, '75')])
+(0.0, 100.0)
+None
+Text(0.5, 1.1, 'CB')
+([<matplotlib.projections.polar.ThetaTick object at 0x7fac95a0a100>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95a28be0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac959ccfa0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac959d37f0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac959d8040>], [Text(0.0, 0, 'Aggression'), Text(1.2566370614359172, 0, 'Jumping'), Text(2.5132741228718345, 0, 'Balance'), Text(3.7699111843077517, 0, 'BallControl'), Text(5.026548245743669, 0, 'Interceptions')])
+([<matplotlib.projections.polar.RadialTick object at 0x7fac95a34c70>, <matplotlib.projections.polar.RadialTick object at 0x7fac95a3e1f0>, <matplotlib.projections.polar.RadialTick object at 0x7fac959d86a0>], [Text(0, 25, '25'), Text(0, 50, '50'), Text(0, 75, '75')])
+(0.0, 100.0)
+None
+Text(0.5, 1.1, 'CDM')
+([<matplotlib.projections.polar.ThetaTick object at 0x7fac95a7a340>, <matplotlib.projections.polar.ThetaTick object at 0x7fac959d3520>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95a0a5e0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac959edb80>, <matplotlib.projections.polar.ThetaTick object at 0x7fac959fbb50>], [Text(0.0, 0, 'Agility'), Text(1.2566370614359172, 0, 'Balance'), Text(2.5132741228718345, 0, 'Acceleration'), Text(3.7699111843077517, 0, 'Dribbling'), Text(5.026548245743669, 0, 'BallControl')])
+([<matplotlib.projections.polar.RadialTick object at 0x7fac95a7a3a0>, <matplotlib.projections.polar.RadialTick object at 0x7fac959f3790>, <matplotlib.projections.polar.RadialTick object at 0x7fac9598f070>], [Text(0, 25, '25'), Text(0, 50, '50'), Text(0, 75, '75')])
+(0.0, 100.0)
+None
+Text(0.5, 1.1, 'CF')
+([<matplotlib.projections.polar.ThetaTick object at 0x7fac9598ffd0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac959fbee0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac959bb550>, <matplotlib.projections.polar.ThetaTick object at 0x7fac959bbd60>, <matplotlib.projections.polar.ThetaTick object at 0x7fac959c15b0>], [Text(0.0, 0, 'Balance'), Text(1.2566370614359172, 0, 'Agility'), Text(2.5132741228718345, 0, 'Acceleration'), Text(3.7699111843077517, 0, 'BallControl'), Text(5.026548245743669, 0, 'LongPassing')])
+([<matplotlib.projections.polar.RadialTick object at 0x7fac95996e80>, <matplotlib.projections.polar.RadialTick object at 0x7fac959a5700>, <matplotlib.projections.polar.RadialTick object at 0x7fac959c1c40>], [Text(0, 25, '25'), Text(0, 50, '50'), Text(0, 75, '75')])
+(0.0, 100.0)
+None
+Text(0.5, 1.1, 'CM')
+([<matplotlib.projections.polar.ThetaTick object at 0x7fac95963f10>, <matplotlib.projections.polar.ThetaTick object at 0x7fac959bb3a0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95963eb0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac9595a2b0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac9597a190>], [Text(0.0, 0, 'GKReflexes'), Text(1.2566370614359172, 0, 'GKDiving'), Text(2.5132741228718345, 0, 'GKPositioning'), Text(3.7699111843077517, 0, 'GKHandling'), Text(5.026548245743669, 0, 'GKKicking')])
+([<matplotlib.projections.polar.RadialTick object at 0x7fac9594ec40>, <matplotlib.projections.polar.RadialTick object at 0x7fac9595ad90>, <matplotlib.projections.polar.RadialTick object at 0x7fac9597e520>], [Text(0, 25, '25'), Text(0, 50, '50'), Text(0, 75, '75')])
+(0.0, 100.0)
+None
+Text(0.5, 1.1, 'GK')
+([<matplotlib.projections.polar.ThetaTick object at 0x7fac95918f10>, <matplotlib.projections.polar.ThetaTick object at 0x7fac959180a0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95925ca0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95921940>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95918520>], [Text(0.0, 0, 'Agility'), Text(1.2566370614359172, 0, 'Balance'), Text(2.5132741228718345, 0, 'Acceleration'), Text(3.7699111843077517, 0, 'Dribbling'), Text(5.026548245743669, 0, 'BallControl')])
+([<matplotlib.projections.polar.RadialTick object at 0x7fac959107c0>, <matplotlib.projections.polar.RadialTick object at 0x7fac95918070>, <matplotlib.projections.polar.RadialTick object at 0x7fac959b3460>], [Text(0, 25, '25'), Text(0, 50, '50'), Text(0, 75, '75')])
+(0.0, 100.0)
+None
+Text(0.5, 1.1, 'LAM')
+([<matplotlib.projections.polar.ThetaTick object at 0x7fac95925b50>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95940af0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac958d6c40>, <matplotlib.projections.polar.ThetaTick object at 0x7fac958de490>, <matplotlib.projections.polar.ThetaTick object at 0x7fac958deca0>], [Text(0.0, 0, 'Acceleration'), Text(1.2566370614359172, 0, 'Balance'), Text(2.5132741228718345, 0, 'Agility'), Text(3.7699111843077517, 0, 'Jumping'), Text(5.026548245743669, 0, 'Aggression')])
+([<matplotlib.projections.polar.RadialTick object at 0x7fac958c7190>, <matplotlib.projections.polar.RadialTick object at 0x7fac958de0a0>, <matplotlib.projections.polar.RadialTick object at 0x7fac958e3340>], [Text(0, 25, '25'), Text(0, 50, '50'), Text(0, 75, '75')])
+(0.0, 100.0)
+None
+Text(0.5, 1.1, 'LB')
+([<matplotlib.projections.polar.ThetaTick object at 0x7fac958857c0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac958de3d0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95885550>, <matplotlib.projections.polar.ThetaTick object at 0x7fac958ffb20>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95894820>], [Text(0.0, 0, 'Jumping'), Text(1.2566370614359172, 0, 'Aggression'), Text(2.5132741228718345, 0, 'HeadingAccuracy'), Text(3.7699111843077517, 0, 'Marking'), Text(5.026548245743669, 0, 'Interceptions')])
+([<matplotlib.projections.polar.RadialTick object at 0x7fac95885c70>, <matplotlib.projections.polar.RadialTick object at 0x7fac95885fa0>, <matplotlib.projections.polar.RadialTick object at 0x7fac9589dbb0>], [Text(0, 25, '25'), Text(0, 50, '50'), Text(0, 75, '75')])
+(0.0, 100.0)
+None
+Text(0.5, 1.1, 'LCB')
+([<matplotlib.projections.polar.ThetaTick object at 0x7fac9589d100>, <matplotlib.projections.polar.ThetaTick object at 0x7fac958a1eb0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac9584e3d0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac958bc0a0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac958b7d30>], [Text(0.0, 0, 'Balance'), Text(1.2566370614359172, 0, 'Agility'), Text(2.5132741228718345, 0, 'BallControl'), Text(3.7699111843077517, 0, 'LongPassing'), Text(5.026548245743669, 0, 'Acceleration')])
+([<matplotlib.projections.polar.RadialTick object at 0x7fac958bcfa0>, <matplotlib.projections.polar.RadialTick object at 0x7fac958b7310>, <matplotlib.projections.polar.RadialTick object at 0x7fac95855a90>], [Text(0, 25, '25'), Text(0, 50, '50'), Text(0, 75, '75')])
+(0.0, 100.0)
+None
+Text(0.5, 1.1, 'LCM')
+([<matplotlib.projections.polar.ThetaTick object at 0x7fac958bc790>, <matplotlib.projections.polar.ThetaTick object at 0x7fac958ae190>, <matplotlib.projections.polar.ThetaTick object at 0x7fac9587d2b0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac9587dac0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95881310>], [Text(0.0, 0, 'Aggression'), Text(1.2566370614359172, 0, 'BallControl'), Text(2.5132741228718345, 0, 'LongPassing'), Text(3.7699111843077517, 0, 'Balance'), Text(5.026548245743669, 0, 'Agility')])
+([<matplotlib.projections.polar.RadialTick object at 0x7fac95930c40>, <matplotlib.projections.polar.RadialTick object at 0x7fac958c7430>, <matplotlib.projections.polar.RadialTick object at 0x7fac95881970>], [Text(0, 25, '25'), Text(0, 50, '50'), Text(0, 75, '75')])
+(0.0, 100.0)
+None
+Text(0.5, 1.1, 'LDM')
+([<matplotlib.projections.polar.ThetaTick object at 0x7fac95824d60>, <matplotlib.projections.polar.ThetaTick object at 0x7fac9587d6a0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac958245e0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac9581fc40>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95835e50>], [Text(0.0, 0, 'Balance'), Text(1.2566370614359172, 0, 'Agility'), Text(2.5132741228718345, 0, 'Acceleration'), Text(3.7699111843077517, 0, 'Dribbling'), Text(5.026548245743669, 0, 'BallControl')])
+([<matplotlib.projections.polar.RadialTick object at 0x7fac95824070>, <matplotlib.projections.polar.RadialTick object at 0x7fac9581fa60>, <matplotlib.projections.polar.RadialTick object at 0x7fac95840220>], [Text(0, 25, '25'), Text(0, 50, '50'), Text(0, 75, '75')])
+(0.0, 100.0)
+None
+Text(0.5, 1.1, 'LF')
+([<matplotlib.projections.polar.ThetaTick object at 0x7fac957dbfa0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac957db3d0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac957eaa00>, <matplotlib.projections.polar.ThetaTick object at 0x7fac957d5730>, <matplotlib.projections.polar.ThetaTick object at 0x7fac957ea730>], [Text(0.0, 0, 'Acceleration'), Text(1.2566370614359172, 0, 'Agility'), Text(2.5132741228718345, 0, 'Balance'), Text(3.7699111843077517, 0, 'Dribbling'), Text(5.026548245743669, 0, 'BallControl')])
+([<matplotlib.projections.polar.RadialTick object at 0x7fac957ce640>, <matplotlib.projections.polar.RadialTick object at 0x7fac957d5940>, <matplotlib.projections.polar.RadialTick object at 0x7fac957f9100>], [Text(0, 25, '25'), Text(0, 50, '50'), Text(0, 75, '75')])
+(0.0, 100.0)
+None
+Text(0.5, 1.1, 'LM')
+([<matplotlib.projections.polar.ThetaTick object at 0x7fac958ae880>, <matplotlib.projections.polar.ThetaTick object at 0x7fac958405b0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac9579b880>, <matplotlib.projections.polar.ThetaTick object at 0x7fac957a10d0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac957a18e0>], [Text(0.0, 0, 'Acceleration'), Text(1.2566370614359172, 0, 'Agility'), Text(2.5132741228718345, 0, 'Finishing'), Text(3.7699111843077517, 0, 'Jumping'), Text(5.026548245743669, 0, 'BallControl')])
+([<matplotlib.projections.polar.RadialTick object at 0x7fac958406d0>, <matplotlib.projections.polar.RadialTick object at 0x7fac9579b730>, <matplotlib.projections.polar.RadialTick object at 0x7fac957ac0d0>], [Text(0, 25, '25'), Text(0, 50, '50'), Text(0, 75, '75')])
+(0.0, 100.0)
+None
+Text(0.5, 1.1, 'LS')
+([<matplotlib.projections.polar.ThetaTick object at 0x7fac957483a0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95748bb0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac957b0e80>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95743f70>, <matplotlib.projections.polar.ThetaTick object at 0x7fac9575b490>], [Text(0.0, 0, 'Acceleration'), Text(1.2566370614359172, 0, 'Agility'), Text(2.5132741228718345, 0, 'Balance'), Text(3.7699111843077517, 0, 'Dribbling'), Text(5.026548245743669, 0, 'BallControl')])
+([<matplotlib.projections.polar.RadialTick object at 0x7fac957489a0>, <matplotlib.projections.polar.RadialTick object at 0x7fac957430a0>, <matplotlib.projections.polar.RadialTick object at 0x7fac95761820>], [Text(0, 25, '25'), Text(0, 50, '50'), Text(0, 75, '75')])
+(0.0, 100.0)
+None
+Text(0.5, 1.1, 'LW')
+([<matplotlib.projections.polar.ThetaTick object at 0x7fac9575b8b0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95779280>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95712040>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95781c40>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95779910>], [Text(0.0, 0, 'Acceleration'), Text(1.2566370614359172, 0, 'Agility'), Text(2.5132741228718345, 0, 'Balance'), Text(3.7699111843077517, 0, 'Jumping'), Text(5.026548245743669, 0, 'Crossing')])
+([<matplotlib.projections.polar.RadialTick object at 0x7fac957730d0>, <matplotlib.projections.polar.RadialTick object at 0x7fac95779070>, <matplotlib.projections.polar.RadialTick object at 0x7fac95719700>], [Text(0, 25, '25'), Text(0, 50, '50'), Text(0, 75, '75')])
+(0.0, 100.0)
+None
+Text(0.5, 1.1, 'LWB')
+([<matplotlib.projections.polar.ThetaTick object at 0x7fac9571ff10>, <matplotlib.projections.polar.ThetaTick object at 0x7fac9571fdc0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95761cd0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac957bb0d0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac9586eaf0>], [Text(0.0, 0, 'Agility'), Text(1.2566370614359172, 0, 'Balance'), Text(2.5132741228718345, 0, 'Acceleration'), Text(3.7699111843077517, 0, 'Dribbling'), Text(5.026548245743669, 0, 'BallControl')])
+([<matplotlib.projections.polar.RadialTick object at 0x7fac9573a880>, <matplotlib.projections.polar.RadialTick object at 0x7fac95743880>, <matplotlib.projections.polar.RadialTick object at 0x7fac956c9610>], [Text(0, 25, '25'), Text(0, 50, '50'), Text(0, 75, '75')])
+(0.0, 100.0)
+None
+Text(0.5, 1.1, 'RAM')
+([<matplotlib.projections.polar.ThetaTick object at 0x7fac956e8970>, <matplotlib.projections.polar.ThetaTick object at 0x7fac957bb2e0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac956e8f40>, <matplotlib.projections.polar.ThetaTick object at 0x7fac956d9bb0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac956f9af0>], [Text(0.0, 0, 'Acceleration'), Text(1.2566370614359172, 0, 'Balance'), Text(2.5132741228718345, 0, 'Jumping'), Text(3.7699111843077517, 0, 'Agility'), Text(5.026548245743669, 0, 'Aggression')])
+([<matplotlib.projections.polar.RadialTick object at 0x7fac956e8f70>, <matplotlib.projections.polar.RadialTick object at 0x7fac956e3700>, <matplotlib.projections.polar.RadialTick object at 0x7fac95702e80>], [Text(0, 25, '25'), Text(0, 50, '50'), Text(0, 75, '75')])
+(0.0, 100.0)
+None
+Text(0.5, 1.1, 'RB')
+([<matplotlib.projections.polar.ThetaTick object at 0x7fac956a2cd0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac956a2f70>, <matplotlib.projections.polar.ThetaTick object at 0x7fac956b06a0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac956998b0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac956b0610>], [Text(0.0, 0, 'Jumping'), Text(1.2566370614359172, 0, 'Aggression'), Text(2.5132741228718345, 0, 'HeadingAccuracy'), Text(3.7699111843077517, 0, 'Marking'), Text(5.026548245743669, 0, 'Interceptions')])
+([<matplotlib.projections.polar.RadialTick object at 0x7fac95693e20>, <matplotlib.projections.polar.RadialTick object at 0x7fac956a2f40>, <matplotlib.projections.polar.RadialTick object at 0x7fac956bad60>], [Text(0, 25, '25'), Text(0, 50, '50'), Text(0, 75, '75')])
+(0.0, 100.0)
+None
+Text(0.5, 1.1, 'RCB')
+([<matplotlib.projections.polar.ThetaTick object at 0x7fac956434c0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95652a90>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95669460>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95669c70>, <matplotlib.projections.polar.ThetaTick object at 0x7fac9566e4c0>], [Text(0.0, 0, 'Agility'), Text(1.2566370614359172, 0, 'Balance'), Text(2.5132741228718345, 0, 'BallControl'), Text(3.7699111843077517, 0, 'LongPassing'), Text(5.026548245743669, 0, 'Aggression')])
+([<matplotlib.projections.polar.RadialTick object at 0x7fac95699f40>, <matplotlib.projections.polar.RadialTick object at 0x7fac95669310>, <matplotlib.projections.polar.RadialTick object at 0x7fac95652400>], [Text(0, 25, '25'), Text(0, 50, '50'), Text(0, 75, '75')])
+(0.0, 100.0)
+None
+Text(0.5, 1.1, 'RCM')
+([<matplotlib.projections.polar.ThetaTick object at 0x7fac95607fa0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95669730>, <matplotlib.projections.polar.ThetaTick object at 0x7fac956115b0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95607910>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95620160>], [Text(0.0, 0, 'Aggression'), Text(1.2566370614359172, 0, 'Jumping'), Text(2.5132741228718345, 0, 'BallControl'), Text(3.7699111843077517, 0, 'LongPassing'), Text(5.026548245743669, 0, 'Balance')])
+([<matplotlib.projections.polar.RadialTick object at 0x7fac95607b20>, <matplotlib.projections.polar.RadialTick object at 0x7fac9567fd30>, <matplotlib.projections.polar.RadialTick object at 0x7fac956244f0>], [Text(0, 25, '25'), Text(0, 50, '50'), Text(0, 75, '75')])
+(0.0, 100.0)
+None
+Text(0.5, 1.1, 'RDM')
+([<matplotlib.projections.polar.ThetaTick object at 0x7fac9562a940>, <matplotlib.projections.polar.ThetaTick object at 0x7fac955c7ca0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac955ce8e0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac955d5130>, <matplotlib.projections.polar.ThetaTick object at 0x7fac955d5940>], [Text(0.0, 0, 'Agility'), Text(1.2566370614359172, 0, 'Acceleration'), Text(2.5132741228718345, 0, 'Balance'), Text(3.7699111843077517, 0, 'BallControl'), Text(5.026548245743669, 0, 'Dribbling')])
+([<matplotlib.projections.polar.RadialTick object at 0x7fac95640580>, <matplotlib.projections.polar.RadialTick object at 0x7fac9562a7f0>, <matplotlib.projections.polar.RadialTick object at 0x7fac955dd070>], [Text(0, 25, '25'), Text(0, 50, '50'), Text(0, 75, '75')])
+(0.0, 100.0)
+None
+Text(0.5, 1.1, 'RF')
+([<matplotlib.projections.polar.ThetaTick object at 0x7fac955ff460>, <matplotlib.projections.polar.ThetaTick object at 0x7fac955ce7c0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac955ff580>, <matplotlib.projections.polar.ThetaTick object at 0x7fac955f76a0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac9558f4c0>], [Text(0.0, 0, 'Acceleration'), Text(1.2566370614359172, 0, 'Agility'), Text(2.5132741228718345, 0, 'Balance'), Text(3.7699111843077517, 0, 'Dribbling'), Text(5.026548245743669, 0, 'BallControl')])
+([<matplotlib.projections.polar.RadialTick object at 0x7fac955ffa60>, <matplotlib.projections.polar.RadialTick object at 0x7fac955f70d0>, <matplotlib.projections.polar.RadialTick object at 0x7fac95592850>], [Text(0, 25, '25'), Text(0, 50, '50'), Text(0, 75, '75')])
+(0.0, 100.0)
+None
+Text(0.5, 1.1, 'RM')
+([<matplotlib.projections.polar.ThetaTick object at 0x7fac955a69a0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac955a68b0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac955b1d90>, <matplotlib.projections.polar.ThetaTick object at 0x7fac955bd5e0>, <matplotlib.projections.polar.ThetaTick object at 0x7fac955bddf0>], [Text(0.0, 0, 'Acceleration'), Text(1.2566370614359172, 0, 'Agility'), Text(2.5132741228718345, 0, 'Jumping'), Text(3.7699111843077517, 0, 'Finishing'), Text(5.026548245743669, 0, 'BallControl')])
+([<matplotlib.projections.polar.RadialTick object at 0x7fac955a6fa0>, <matplotlib.projections.polar.RadialTick object at 0x7fac955c77f0>, <matplotlib.projections.polar.RadialTick object at 0x7fac95544490>], [Text(0, 25, '25'), Text(0, 50, '50'), Text(0, 75, '75')])
+(0.0, 100.0)
+None
+Text(0.5, 1.1, 'RS')
+([<matplotlib.projections.polar.ThetaTick object at 0x7fac95563910>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95569e20>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95563700>, <matplotlib.projections.polar.ThetaTick object at 0x7fac9555de80>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95573970>], [Text(0.0, 0, 'Acceleration'), Text(1.2566370614359172, 0, 'Agility'), Text(2.5132741228718345, 0, 'Balance'), Text(3.7699111843077517, 0, 'Dribbling'), Text(5.026548245743669, 0, 'BallControl')])
+([<matplotlib.projections.polar.RadialTick object at 0x7fac95563dc0>, <matplotlib.projections.polar.RadialTick object at 0x7fac9555d580>, <matplotlib.projections.polar.RadialTick object at 0x7fac9557cd00>], [Text(0, 25, '25'), Text(0, 50, '50'), Text(0, 75, '75')])
+(0.0, 100.0)
+None
+Text(0.5, 1.1, 'RW')
+([<matplotlib.projections.polar.ThetaTick object at 0x7fac9551bb50>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95515730>, <matplotlib.projections.polar.ThetaTick object at 0x7fac9552c520>, <matplotlib.projections.polar.ThetaTick object at 0x7fac9551b880>, <matplotlib.projections.polar.ThetaTick object at 0x7fac9552c9d0>], [Text(0.0, 0, 'Acceleration'), Text(1.2566370614359172, 0, 'Agility'), Text(2.5132741228718345, 0, 'Balance'), Text(3.7699111843077517, 0, 'Jumping'), Text(5.026548245743669, 0, 'Aggression')])
+([<matplotlib.projections.polar.RadialTick object at 0x7fac9551b460>, <matplotlib.projections.polar.RadialTick object at 0x7fac95515460>, <matplotlib.projections.polar.RadialTick object at 0x7fac95533be0>], [Text(0, 25, '25'), Text(0, 50, '50'), Text(0, 75, '75')])
+(0.0, 100.0)
+None
+Text(0.5, 1.1, 'RWB')
+([<matplotlib.projections.polar.ThetaTick object at 0x7fac95539460>, <matplotlib.projections.polar.ThetaTick object at 0x7fac954c7e80>, <matplotlib.projections.polar.ThetaTick object at 0x7fac9555d730>, <matplotlib.projections.polar.ThetaTick object at 0x7fac95637100>, <matplotlib.projections.polar.ThetaTick object at 0x7fac954da790>], [Text(0.0, 0, 'Acceleration'), Text(1.2566370614359172, 0, 'Jumping'), Text(2.5132741228718345, 0, 'Finishing'), Text(3.7699111843077517, 0, 'Agility'), Text(5.026548245743669, 0, 'Balance')])
+([<matplotlib.projections.polar.RadialTick object at 0x7fac954cf520>, <matplotlib.projections.polar.RadialTick object at 0x7fac955811c0>, <matplotlib.projections.polar.RadialTick object at 0x7fac954c7700>], [Text(0, 25, '25'), Text(0, 50, '50'), Text(0, 75, '75')])
+(0.0, 100.0)
+None
+Text(0.5, 1.1, 'ST')
+<seaborn.axisgrid.FacetGrid object at 0x7fac95515cd0>
+<seaborn.axisgrid.FacetGrid object at 0x7fac95ab4a30>
+<seaborn.axisgrid.JointGrid object at 0x7fac95515cd0>
+<seaborn.axisgrid.FacetGrid object at 0x7fac95338dc0>
+AxesSubplot(0.125,0.185;0.62x0.62)
+AxesSubplot(0.125,0.185;0.62x0.62)
+   Age  Overall  Potential  ...  Stamina  Strength  Preferred Foot
+0   31       94         94  ...     72.0      59.0            Left
+1   33       94         94  ...     88.0      79.0           Right
+2   26       92         93  ...     81.0      49.0           Right
+3   27       91         93  ...     43.0      64.0           Right
+4   27       91         92  ...     90.0      75.0           Right
+
+[5 rows x 9 columns]
+<seaborn.axisgrid.PairGrid object at 0x7fac950ed400>
+ Modelling !!
+   Age Nationality  Overall  ...  GKKicking GKPositioning  GKReflexes
+0   31   Argentina       94  ...       15.0          14.0         8.0
+1   33    Portugal       94  ...       15.0          14.0        11.0
+2   26      Brazil       92  ...       15.0          15.0        11.0
+3   27       Spain       91  ...       87.0          88.0        94.0
+4   27     Belgium       91  ...        5.0          10.0        13.0
+
+[5 rows x 45 columns]
+
+Process finished with exit code 0
